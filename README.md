@@ -50,8 +50,8 @@ After running, the CLI automatically starts:
 
 ### **1. Clone the repository**
 ```bash
-git clone https://github.com/Mo3zart/OOFPP_Habits.git
-cd OOFPP_Habits
+git clone https://github.com/Mo3zart/Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final.git
+cd Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final/OOFPP_Habits_Phase2/OOFPP_Habits
 ```
 
 ### **2. (Optional) Create a virtual environment**
