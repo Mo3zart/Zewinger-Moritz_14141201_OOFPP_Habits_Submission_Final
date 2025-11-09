@@ -74,6 +74,10 @@ python3 src/main.py
 
 You’ll see the interactive CLI start with the HabitTracker banner.
 
+> [!Warning]
+> If a new image get's build, the sample data in the database get's changed to keep the streaks up to date.
+> To prevent the changes, just comment out the `RUN` command of the "DB seeder" in the Dockerfile.
+
 ---
 
 ## 💻 Usage
