@@ -25,7 +25,8 @@ This project demonstrates the design and implementation of a **habit tracking sy
 
 > [!IMPORTANT]
 > Docker needs to be installed on your system.
-> It is also important to change the directory to OOFPP_Habits_Phase2/OOFPP_Habits
+> It is also important to change the directory to:
+> `./OOFPP_Habits_Phase2/OOFPP_Habits`
 
 To build and run the application inside Docker:
 ```bash
