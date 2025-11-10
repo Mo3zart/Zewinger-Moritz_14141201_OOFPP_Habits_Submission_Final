@@ -21,7 +21,7 @@ This project demonstrates the design and implementation of a **habit tracking sy
 
 ## ⚙️ Installation Instructions
 
-### **1. Clone the repository**
+### **Clone the repository**
 ```bash
 git clone https://github.com/Mo3zart/Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final.git
 cd Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final/OOFPP_Habits_Phase2/OOFPP_Habits
@@ -31,8 +31,6 @@ cd Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final/OOFPP_Habits_Phase2/OO
 
 > [!IMPORTANT]
 > Docker needs to be installed on your system.
-> It is also important to change the directory to:
-> `./OOFPP_Habits_Phase2/OOFPP_Habits`
 
 ### Build and run the application inside Docker with persistence:
 ```bash
