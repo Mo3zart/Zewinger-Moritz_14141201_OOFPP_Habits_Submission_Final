@@ -21,7 +21,13 @@ This project demonstrates the design and implementation of a **habit tracking sy
 
 ## ⚙️ Installation Instructions
 
-### **1. Run with Docker**
+### **1. Clone the repository**
+```bash
+git clone https://github.com/Mo3zart/Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final.git
+cd Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final/OOFPP_Habits_Phase2/OOFPP_Habits
+```
+
+### **Run with Docker**
 
 > [!IMPORTANT]
 > Docker needs to be installed on your system.
@@ -53,26 +59,22 @@ docker start -ai habits
 
 *`---OR---`*
 
-### **1. Clone the repository**
-```bash
-git clone https://github.com/Mo3zart/Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final.git
-cd Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final/OOFPP_Habits_Phase2/OOFPP_Habits
-```
+## **Run in virtual environment**
 
-### **2. (Optional) Create a virtual environment**
+**Create a virtual environment**
 ```bash
 python3 -m venv .habit-tracker
 source .habit-tracker/bin/activate  # macOS/Linux
 .habit-tracker\Scripts\activate    # Windows
 ```
 
-### **3. Install dependencies**
+**Install dependencies**
 ```bash
 pip3 install -r requirements.txt
 python3 src/modules/seed_db.py
 ```
 
-### **4. Run locally**
+**Run locally**
 ```bash
 python3 src/main.py
 ```
