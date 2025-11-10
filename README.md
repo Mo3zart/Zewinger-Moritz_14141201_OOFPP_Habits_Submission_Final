@@ -28,22 +28,27 @@ This project demonstrates the design and implementation of a **habit tracking sy
 > It is also important to change the directory to:
 > `./OOFPP_Habits_Phase2/OOFPP_Habits`
 
-To build and run the application inside Docker:
+### Build and run the application inside Docker with persistence:
 ```bash
-docker build --no-cache -t habit-tracker .
-docker run -it habit-tracker
+# Build
+docker build -t habit-tracker .
+
+# Create a named volume once (persists across container recreations)
+docker volume create habits_data
+
+# Run the app using that volume
+docker run --name habits -it \
+  -v habits_data:/data \
+  -e DB_PATH=./src/data/sample_habits.db \
+  habit-tracker
 ```
 
-After running, the CLI automatically starts:
-```
-----------------------------------------------------------
- _   _       _     _ _ _____              _
-| | | |     | |   (_) |_   _|            | |
-| |_| | __ _| |__  _| |_| |_ __ __ _  ___| | _____ _ __
-|  _  |/ _` | '_ \| | __| | '__/ _` |/ __| |/ / _ \ '__|
-| | | | (_| | |_) | | |_| | | | (_| | (__|   <  __/ |
-\_| |_/\__,_|_.__/|_|\__\_/_|  \__,_|\___|_|\_\___|_|
-----------------------------------------------------------
+After running, the CLI automatically starts.
+
+### Start container again
+If you want to run the same image container again, use the following command:
+```bash
+docker start -ai habits
 ```
 
 *`---OR---`*
@@ -73,10 +78,6 @@ python3 src/main.py
 ```
 
 You’ll see the interactive CLI start with the HabitTracker banner.
-
-> [!Warning]
-> If a new image get's build, the sample data in the database get's changed to keep the streaks up to date.
-> To prevent the changes, just comment out the `RUN` command of the "DB seeder" in the Dockerfile.
 
 ---
 
