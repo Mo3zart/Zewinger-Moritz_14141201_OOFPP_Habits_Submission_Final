@@ -32,7 +32,7 @@ cd Zewinger-Moritz_14141201_OOFPP_Habits_Submission_Final/OOFPP_Habits_Phase2/OO
 > [!IMPORTANT]
 > Docker needs to be installed on your system.
 
-### Build and run the application inside Docker with persistence:
+### Build and run the application with Docker (persistent):
 ```bash
 # Build
 docker build -t habit-tracker .
